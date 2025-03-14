@@ -1,6 +1,5 @@
 import Touka from "../assets/touka.gif";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -31,16 +30,7 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              <TypeAnimation
-                sequence={[
-                  "Front End Developer",
-                  2000,
-                  "Web Developer",
-                  2000,
-                ]}
-                speed={50}
-                repeat={Infinity}
-              />
+              Front End Developer
             </motion.span>
             <motion.p
               variants={container(1)}

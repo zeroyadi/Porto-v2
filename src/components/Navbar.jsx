@@ -1,7 +1,5 @@
 import logo from "../assets/Ky.jpg";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -10,9 +8,30 @@ const Navbar = () => {
         <img className="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaGithub />
-        <FaInstagram />
-        <FaWhatsapp />
+        <a
+          href="https://github.com/zeroyadi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-500"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.instagram.com/irsyad_lya/#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-500"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://wa.me/6281563894702"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-green-500"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
     </nav>
   );

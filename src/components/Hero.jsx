@@ -1,5 +1,6 @@
-import Galaxy from "../assets/Galaxy.jpg";
+import Touka from "../assets/touka.gif";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -30,7 +31,16 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Front End Developer
+              <TypeAnimation
+                sequence={[
+                  "Front End Developer",
+                  2000,
+                  "Web Developer",
+                  2000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+              />
             </motion.span>
             <motion.p
               variants={container(1)}
@@ -38,10 +48,8 @@ const Hero = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam deleniti temporibus dolores aspernatur cumque sunt
-              labore, eaque commodi quo quia, molestias iusto ratione totam
-              suscipit quos molestiae optio tempora ducimus!
+              Kode adalah seni, dan setiap baris adalah kesempatan untuk
+              menciptakan sesuatu yang bermakna.
             </motion.p>
           </div>
         </div>
@@ -51,8 +59,8 @@ const Hero = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              src={Galaxy}
-              alt="Galaxy"
+              src={Touka}
+              alt="Touka"
             />
           </div>
         </div>

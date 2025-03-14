@@ -1,26 +1,18 @@
 const Experience = () => {
   const experiences = [
     {
-      year: "2023",
-      role: "Frontend Developer",
-      company: "ABC Tech",
-      description:
-        "Worked on developing user interfaces and improving user experiences.",
-      technologies: ["React.js", "Next.js", "Tailwind CSS"],
-    },
-    {
-      year: "2022",
-      role: "Backend Developer",
-      company: "XYZ Corp",
-      description: "Conducted testing and ensured product quality.",
-      technologies: ["Jest", "Cypress", "Selenium"],
-    },
-    {
       year: "2024",
       role: "Quality Assurance Intern",
       company: "PT.BiruTekno.itc",
       description: "Conducted testing and ensured product quality.",
-      technologies: ["Laravel", "Mysql", "MongoDB"],
+      technologies: ["Draw.io", "Spreadsheet"],
+    },
+    {
+      year: "2025",
+      role: "Backend, Quality Assurance, Data Collector",
+      company: "SMKN 04 BANDUNG",
+      description: "test the web deskify, and search for data create api and add data to json.",
+      technologies: ["JSON", "Spreadsheet", "docs"],
     },
   ];
 

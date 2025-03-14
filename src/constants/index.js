@@ -41,7 +41,7 @@ export const PROJECTS = [
     title: "Website Streaming",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "Website yang menyediakan nonton anime Date a Live",
     technologies: ["HTML", "CSS"],
   },
   {
